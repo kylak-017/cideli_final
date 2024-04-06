@@ -1,0 +1,25 @@
+{% extends '../index.html' %}
+{% load static %}
+{% block 'css' %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}"/>
+{% endblock %}
+
+{% block 'body' %}
+
+<div id="SignInContainer">
+  <div id="SignInWrap">
+    <div class="logo">
+      <span>CiDeli Register</span>
+    </div>
+    <form>
+      <input class="block" placeholder="Username" type="text"/>
+      <input class="block" placeholder="Password" type="password"/>
+      <input class="block" placeholder="Email" type="text"/>
+      <input class="block" placeholder="StudentID" type="text"/>
+
+
+        <button class="loginButton block" type="submit">Register</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
